@@ -1,0 +1,4 @@
+interface:
+  display_name: "轻量产品规格构建器"
+  short_description: "通过结构化追问，把模糊需求整理成可执行的产品规格文档"
+  default_prompt: "使用这个技能澄清产品想法，并生成或更新一份具体、可落地的 Product Spec。"
