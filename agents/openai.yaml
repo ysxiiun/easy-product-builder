@@ -1,4 +1,4 @@
 interface:
-  display_name: "产品规格与原型构建器"
-  short_description: "通过多轮追问，将一句话需求整理成 PRD、Product Spec 与原型说明"
-  default_prompt: "使用这个技能基于一句话需求进行产品设计澄清，生成或更新 PRD / Product Spec；如包含界面，再补充线框说明或 AI 原型提示词。"
+  display_name: "一句话需求 Spec 构建器"
+  short_description: "通过连续追问，将一句话需求整理成 Product Spec 与 UI Spec"
+  default_prompt: "使用这个技能通过多轮高价值追问，挖掘用户真实想法，生成或更新 Product-Spec.md；如果产品包含界面，再生成或更新 UI-Spec.md。不要默认产出额外文档，除非用户明确要求。"
