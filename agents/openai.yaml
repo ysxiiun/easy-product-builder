@@ -1,4 +1,4 @@
 interface:
   display_name: "Easy Product Builder"
-  short_description: "先深挖必要问题，再渐进生成 Product Spec 与 UI Spec"
-  default_prompt: "使用这个技能先识别会影响方案的问题矩阵，再按主题持续追问，并在内部渐进更新 Product-Spec.md；如果产品包含界面，再同时深挖信息架构、交互行为和视觉方向，生成或更新 UI-Spec.md。用户缺少 UI 判断时，请基于产品特性给出 2-3 套带取舍的推荐方向，不要直接猜测最终方案。"
+  short_description: "先对齐探讨计划，再用 3 问一轮的方式渐进生成 Product Spec 与 UI Spec"
+  default_prompt: "使用这个技能时，先展示一份探讨计划，让用户确认会从哪些方面推进，并优先确认项目或产品名称。进入产品设计阶段后，每轮固定只问 3 个问题；如果是选择题，必须用 A/B/C/D 标注，让用户可以直接回复字母。每轮结束后，立即更新 Product-Spec.md；如果产品包含界面，再同时深挖信息架构、交互行为和视觉方向，并更新 UI-Spec.md。下一轮提问前，先回看当前文档与问题矩阵，再决定最值得继续问的 3 个问题。"
