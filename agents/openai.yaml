@@ -1,4 +1,4 @@
 interface:
   display_name: "Easy Product Builder"
-  short_description: "通过连续追问，将一句话需求整理成 Product Spec 与 UI Spec"
-  default_prompt: "使用这个技能通过多轮高价值追问，挖掘用户真实想法，生成或更新 Product-Spec.md；如果产品包含界面，再生成或更新 UI-Spec.md。不要默认产出额外文档，除非用户明确要求。"
+  short_description: "先深挖必要问题，再渐进生成 Product Spec 与 UI Spec"
+  default_prompt: "使用这个技能先识别会影响方案的问题矩阵，再按主题持续追问，并在内部渐进更新 Product-Spec.md；如果产品包含界面，再同时深挖信息架构、交互行为和视觉方向，生成或更新 UI-Spec.md。用户缺少 UI 判断时，请基于产品特性给出 2-3 套带取舍的推荐方向，不要直接猜测最终方案。"
