@@ -2,6 +2,16 @@
 
 `easy-product-builder` 是一个通过连续追问，把一句话需求挖掘成产品规格文档的 skill。
 
+## 触发方式
+
+仅支持显式加载：
+
+- `使用 $easy-product-builder ...`
+- `加载 easy-product-builder ...`
+- `使用 Easy Product Builder skill ...`
+
+普通产品想法、PRD、Product Spec 或 UI Spec 描述不会自动加载本 skill，除非用户同时显式点名 Easy Product Builder。
+
 它适合这样一类场景：用户脑子里已经有方向，但流程、规则、页面、状态、边界、视觉方向还没真正想清楚。这个 skill 的默认工作方式不是问两轮就写，也不是无休止盘问，而是：
 
 - 先展示一份探讨计划，与用户对齐这次会从哪些方面推进

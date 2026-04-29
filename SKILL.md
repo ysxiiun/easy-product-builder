@@ -1,9 +1,15 @@
 ---
 name: easy-product-builder
-description: 通过连续追问和逐步澄清，帮助用户把一句话需求挖掘成清晰、可执行的 Product Spec 和 UI Spec。适用于从 0 到 1 的产品设计，也适用于对现有规格文档的迭代更新。
+description: 仅当用户显式写出 `$easy-product-builder`、`easy-product-builder` 或明确要求加载 Easy Product Builder skill 时使用；不要基于一句话产品需求、产品设计或规格文档提示自动加载。本 skill 通过连续追问和逐步澄清生成 Product Spec 和 UI Spec。
 ---
 
 # Easy Product Builder
+
+## 显式加载规则
+
+- 本 skill 只能由用户显式点名加载：`$easy-product-builder`、`easy-product-builder`，或清楚表达“加载/使用 Easy Product Builder skill”
+- 不得因为用户提出产品想法、0 到 1 产品设计、PRD、Product Spec 或 UI Spec 相关提示而自动加载
+- 如果用户没有显式点名，应按普通 agent 流程处理，不应用本 skill 的探讨计划、追问和文档落盘流程
 
 ## 概述
 

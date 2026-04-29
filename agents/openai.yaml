@@ -1,4 +1,7 @@
 interface:
   display_name: "Easy Product Builder"
-  short_description: "先对齐探讨计划，再用 3 问一轮的方式渐进生成 Product Spec 与 UI Spec"
-  default_prompt: "使用这个技能时，先展示一份探讨计划，让用户确认会从哪些方面推进，并优先确认项目或产品名称。所有规格文档默认统一写入 `.easy-coding/spec/`，包括 `.easy-coding/spec/Product-Spec.md` 和 `.easy-coding/spec/UI-Spec.md`。进入产品设计阶段后，每轮固定只问 3 个问题；如果是选择题，必须用 A/B/C/D 标注，让用户可以直接回复字母。每轮结束后，立即更新 `.easy-coding/spec/Product-Spec.md`；如果产品包含界面，再同时深挖信息架构、交互行为和视觉方向，并更新 `.easy-coding/spec/UI-Spec.md`。下一轮提问前，先回看当前文档与问题矩阵，再决定最值得继续问的 3 个问题。"
+  short_description: "仅显式调用的产品规格共创技能，3 问一轮生成 Product Spec 与 UI Spec"
+  default_prompt: "仅当用户显式写出 `$easy-product-builder`、`easy-product-builder` 或明确要求加载 Easy Product Builder skill 时使用；不要基于普通产品想法、PRD 或 UI Spec 提示自动加载。加载后，先展示一份探讨计划，让用户确认会从哪些方面推进，并优先确认项目或产品名称。所有规格文档默认统一写入 `.easy-coding/spec/`，包括 `.easy-coding/spec/Product-Spec.md` 和 `.easy-coding/spec/UI-Spec.md`。进入产品设计阶段后，每轮固定只问 3 个问题；如果是选择题，必须用 A/B/C/D 标注，让用户可以直接回复字母。每轮结束后，立即更新 `.easy-coding/spec/Product-Spec.md`；如果产品包含界面，再同时深挖信息架构、交互行为和视觉方向，并更新 `.easy-coding/spec/UI-Spec.md`。下一轮提问前，先回看当前文档与问题矩阵，再决定最值得继续问的 3 个问题。"
+
+policy:
+  allow_implicit_invocation: false
